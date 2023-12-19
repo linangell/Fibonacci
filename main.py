@@ -4,14 +4,14 @@ import factorial
 
 def calculate_factorial():
     k = int(entry.get())
-    result = factorialfactorial(k)
+    result = factorial.factorial(k)
     result_label.config(text=result)
 
 
 def calculate_fibonacci():
-  n = int(entry.get())
-  result = fibonacci.fibonacci(n)
-  result_label.config(text=result)
+    n = int(entry.get())
+    result = fibonacci.fibonacci(n)
+    result_label.config(text=result)
 
 window = tk.Tk()
 window.title("ff")
