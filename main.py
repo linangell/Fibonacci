@@ -3,10 +3,15 @@ import fibonacci
 import factorial
 
 def calculate_factorial():
-    v = int(entry.get())
-    result = factorial(v)
+    k = int(entry.get())
+    result = factorialfactorial(k)
     result_label.config(text=result)
 
+
+def calculate_fibonacci():
+  n = int(entry.get())
+  result = fibonacci.fibonacci(n)
+  result_label.config(text=result)
 
 window = tk.Tk()
 window.title("ff")
@@ -17,7 +22,7 @@ label.pack()
 factorial_button = tk.Button(window, text="Find the factorial", command=calculate_factorial)
 factorial_button.pack()
 
-fibonacci_button = tk.Button(window, text="Find the Fibonacci value", command=fibonacci)
+fibonacci_button = tk.Button(window, text="Find the Fibonacci value", command= calculate_fibonacci)
 fibonacci_button.pack()
 
 entry = tk.Entry(window)
@@ -39,8 +44,5 @@ window.mainloop()
 #   l = input ("Enter the sequences position of the fibonacci value: ")
 #
 #   print('the value pf posion' , v , 'in the fibonachi value' , k )
-
-
-
 
 

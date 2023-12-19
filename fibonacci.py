@@ -1,4 +1,4 @@
-def fibonacci():
+def fibonacci(n):
     num = int(input("Enter the Fibonacci number: "))
     n1, n2 = 0, 1
     sum = 0
