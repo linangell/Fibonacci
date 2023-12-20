@@ -6,7 +6,7 @@ def fibonacci(n):
         print('Please enter a number greater than 0.')
     else:
         for i in range(0, num):
-            print(sum, end=" ")
+            print(sum)
             n1, n2 = n2, sum
             sum = n1 + n2
 
