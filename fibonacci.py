@@ -1,14 +1,9 @@
 def fibonacci(n):
-    num = int(input("Enter the Fibonacci number: "))
-    n1, n2 = 0, 1
-    sum = 0
-    if num <= 0:
-        print('Please enter a number greater than 0.')
-    else:
-        for i in range(0, num):
-            print(sum)
-            n1, n2 = n2, sum
-            sum = n1 + n2
+    fib_sequence = [0, 1]
+    while len(fib_sequence) <= n:
+        next_fib = fib_sequence[-1] + fib_sequence[-2]
+        fib_sequence.append(next_fib)
+    return fib_sequence[n]
 
 
 
